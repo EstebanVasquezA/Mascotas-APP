@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Mascotas_APP.Views.MenuPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid>
+                <Label Text="Select an Action" VerticalOptions="StartAndExpand" HorizontalOptions="CenterAndExpand" 
+                       HorizontalTextAlignment="Center" FontSize="30"/>
+                <FlexLayout Wrap="Wrap" JustifyContent="SpaceEvenly" Direction="Row" Padding="20,20,20,0" AlignContent="Start"
+                            BackgroundColor="White" Margin="0, 50, 0, 10">
+                    <Button x:Name="BtnMascotas" Text="Mascotas" BackgroundColor="Blue" TextColor="White"
+                            HeightRequest="150" WidthRequest="150" FontSize="18" HorizontalOptions="Center"
+                            CornerRadius="25" Margin="5,5,5,5" Clicked="BtnMascotas_Clicked"/>
+                    <Button x:Name="BtnMedicamentos" Text="Medicamentos" BackgroundColor="Blue" TextColor="White"
+                            HeightRequest="150" WidthRequest="150" FontSize="18" HorizontalOptions="Center"
+                            CornerRadius="25" Margin="5,5,5,5"/>
+                    <Button x:Name="BtnVeterinarios" Text="Veterinarios" BackgroundColor="Blue" TextColor="White"
+                            HeightRequest="150" WidthRequest="150" FontSize="18" HorizontalOptions="Center"
+                            CornerRadius="25" Margin="5,5,5,5"/>
+                    <Button x:Name="BtnRegistroMedicamentos" Text="Registro Medicamentos" BackgroundColor="Blue" TextColor="White"
+                            HeightRequest="150" WidthRequest="150" FontSize="18" HorizontalOptions="Center"
+                            CornerRadius="25" Margin="5,5,5,5"/>
+                </FlexLayout>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
