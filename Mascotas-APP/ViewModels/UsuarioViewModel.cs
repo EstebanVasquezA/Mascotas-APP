@@ -25,8 +25,6 @@ namespace Mascotas_APP.ViewModels
 
             try
             {
-                //string EncriptedPassword = MyCrypto.EncriptarEnUnSentido(pPassword);
-
                 MiUsuario.Email = pEmail;
                 MiUsuario.Contrasenna = pContrasenna;
 

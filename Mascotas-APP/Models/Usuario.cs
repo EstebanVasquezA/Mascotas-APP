@@ -36,7 +36,6 @@ namespace Mascotas_APP.Models
 
                 request = new RestRequest(FinalApiRoute, Method.Get);
 
-                //request.AddHeader(CnnToAPI.ApiKeyName, CnnToAPI.ApiKeyValue);
                 request.AddHeader(contentType, mimetype);
 
                 RestResponse response = await client.ExecuteAsync(request);
